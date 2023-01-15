@@ -1,0 +1,181 @@
+@media screen and (max-width: 1030px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coluna-5 {
+        display: flex;
+        flex-direction: row;
+        background-image: linear-gradient(to bottom, #3cba92 0%, #0ba360 100%);
+        width: 100%;
+        height: 40px;
+    }
+
+    .coluna-70 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .coluna-25 {
+        display: flex;
+        flex-direction: column;
+        background-color: #ececec;
+        width: 100%;;
+    }
+
+    .coluna-5 .siderbar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-image: linear-gradient(to bottom, #3cba92 0%, #0ba360 100%);
+        margin-top: 0px;
+        margin-left: 40%;
+    }
+
+    .coluna-5 .siderbar a{
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    
+    .coluna-5 .siderbar ion-icon{
+        padding-right: 0px;
+    }
+
+    .coluna-5 .siderbar-exit {
+        display: flex;
+        flex-direction: row;
+        position:absolute;
+        background-image: linear-gradient(to bottom, #3cba92 0%, #0ba360 100%);
+        margin-top: 0px;
+        margin-left: 92%;
+    }
+
+    .coluna-5 .siderbar-exit a{
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    
+    .coluna-5 .siderbar-exit ion-icon{
+        padding-right: 0px;
+    }
+    
+    .top .texto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top .title{
+        grid-row: auto;
+        margin-top: 75px;
+        margin-left: 10px;
+    }
+    .top .title h1{
+        color: #000000;
+        font-size: 15px;
+    }
+    
+    .top .title h3{
+        color: #A6A2A2;
+        font-size: 10px;
+    }
+
+    .top .itens{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -110px;
+        margin-bottom: 50px;
+    }
+
+    .top .itens .search #txtBusca{
+        width: 350px;
+        margin: 5px;
+    }
+
+    .card-mapa-row {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .aviarios .title{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .aviarios .title h1{
+       font-size: 15px;
+    }
+
+    .aviarios .title a{
+        font-size: 11px;
+    }
+
+    .card-aviarios-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .card-aviario {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 14px;
+        box-shadow: 3px 3px 4px 3px rgba(50, 50, 50, 0.22);
+        padding: 20px;
+        margin: 10px;
+        width: 70%;
+        transition: all 0.2s ease-out;
+    }
+
+    .coluna-25 .calendario-row h1{
+        display: inline;
+        align-items: flex-start;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .coluna-25 .calendario-row .card-calendario{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 7px 7px 13px 7px rgba(50, 50, 50, 0.22);
+        margin: 10px;
+        width: 90%;
+        transition: all 0.3s ease-out;
+    }
+
+    .alertas h2{
+        position: static;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .alertas-row .card-alerta{
+        padding: 5px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .alertas-row .card-alerta .aviso h3{
+        margin: 10px;
+        font-size: 15px;  
+    }
+
+    .alertas-row .card-alerta .horario p{
+        font-size: 11px;
+        margin-top: -20px;
+        margin-right: 10px;
+    }
+    
+}

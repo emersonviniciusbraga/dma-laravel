@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ececec;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.coluna-5 {
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    position: relative;
+    width: 5%;
+    height: auto;
+}
+
+.coluna-70 {
+    position: relative;
+    width: 70%;
+}
+
+.coluna-25 {
+    width: 25%;
+    min-height: 653px;
+    background-color: white;
+}
+
+.coluna-5 .siderbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    margin-top: 140px;
+    max-height: 100vh;
+}
+
+.coluna-5 .siderbar a{
+    color: #000;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: #fff;
+}
+
+.coluna-5 .siderbar a:hover{
+    background: #fff;
+    margin-left: 0px;
+}
+
+.coluna-5 .siderbar ion-icon{
+    padding-right: 12px;
+}
+
+.coluna-5 .siderbar-exit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    margin-top: 580px;
+    max-height: 100vh;
+}
+
+.coluna-5 .siderbar-exit a{
+    color: #000;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: #fff;
+}
+
+.coluna-5 .siderbar-exit a:hover{
+    background: #fff;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.coluna-5 .siderbar-exit ion-icon{
+    padding-right: 12px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+}
+
+.top .texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    font-family: poppinsregular;
+    margin-top: -20px;
+    margin-bottom: -40px;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.top .title{
+    grid-row: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.top .title h3{
+    color: #A6A2A2;
+}
+
+.top .itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top .itens .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.top .itens .search #txtBusca{
+    background-color: white;
+    border: transparent;
+    border-radius: 14px;
+    width: 400px;
+    margin: 10px;
+    padding: 15px;
+    margin-left: -15px;
+}
+
+.top .itens .notificação{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 14px;
+}
+
+.top .itens .notificação a{
+    color: #000;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.card-mapa-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.card-mapa {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    width: 100%;
+    margin: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.aviarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.aviarios .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    font-family: poppinsregular;
+    margin-bottom: -25px;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.aviarios .title a{
+    color: #8f8f8f;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card-aviarios-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-aviario {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 3px 3px 4px 3px rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.card-aviario:hover{
+    top:10px;
+    box-shadow: 7px 7px 13px 7px rgba(50, 50, 50, 0.22);
+}
+
+.card-aviario .dados-monitoramento{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.card-aviario .dados-monitoramento .icon-amonia{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.card-aviario .dados-monitoramento .icon-amonia p{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.card-aviario .dados-monitoramento .icon-amonia span{
+    color: rgb(0, 0, 0);
+}
+
+.card-aviario .dados-monitoramento .icon-amonia .icon-amonia-img{
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.card-aviario .dados-monitoramento .icon-amonia .icon-amonia-img img{
+    width: 25px;
+}
+
+.card-aviario .dados-monitoramento .icon-temperatura{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-aviario .dados-monitoramento .icon-temperatura p{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.card-aviario .dados-monitoramento .icon-temperatura span{
+    color: rgb(0, 0, 0);
+}
+
+.card-aviario .dados-monitoramento .icon-temperatura .icon-temperatura-img{
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.card-aviario .dados-monitoramento .icon-temperatura .icon-temperatura-img img{
+    width: 25px;
+}
+
+.card-aviario .dados-monitoramento .icon-umidade{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-aviario .dados-monitoramento .icon-umidade p{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.card-aviario .dados-monitoramento .icon-umidade span{
+    color: rgb(0, 0, 0);
+}
+
+.card-aviario .dados-monitoramento .icon-umidade .icon-umidade-img{
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.card-aviario .dados-monitoramento .icon-umidade .icon-umidade-img img{
+    width: 25px;
+}
+
+.card-aviario .sub-card-avi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    position: relative;
+    border-radius: 14px;
+    box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: -20px;
+    width: 100%;
+}
+
+.card-aviario .sub-card-avi .info-avi h1{
+    font-size: 25px;
+}
+
+.card-aviario .sub-card-avi .info-avi p{
+    font-size: 13px;
+}
+
+.card-aviario .sub-card-avi .info-avi a{
+    background-color: #fff;
+    position: relative;
+    color: #707070;
+    border-radius: 14px;
+    padding: 3px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card-aviario .sub-card-avi .icon-avi img{
+    width: 80px;
+}
+
+.coluna-25 .calendario-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna-25 .calendario-row h1{
+    display: none;
+}
+
+.coluna-25 .calendario-row .card-calendario{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 7px rgba(50, 50, 50, 0.22);
+    margin: 10px;
+    width: 90%;
+    transition: all 0.3s ease-out;
+}
+
+.coluna-25 .calendario-row .card-calendario #dycalendar{
+    width: 100%;
+}
+
+#dycalendar table{
+    width: 100%;
+}
+
+#dycalendar table td{
+    font-weight: 700;
+    color: #424242;
+    padding: 1px;
+}
+
+#dycalendar .dycalendar-header{
+    font-weight: 700;
+    color: #424242;
+}
+
+#dycalendar .dycalendar-target-date{
+    color:#fff;
+    background: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    border-radius: 14px;
+}
+
+.alertas h3{
+    position: static;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.alertas-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.alertas-row .card-alerta{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px 3px rgba(50, 50, 50, 0.22);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.alertas-row .card-alerta:hover{
+    top:10px;
+    box-shadow: 8px 8px 10px 8px rgba(50, 50, 50, 0.22);
+}
+
+.alertas-row .card-alerta .aviso{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.alertas-row .card-alerta .aviso a{
+    color: #424242;
+    font-size: 35px;
+    margin-left: 6px;
+}
+
+.alertas-row .card-alerta .aviso h3{
+    color: #FF0000;
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;  
+}
+
+.alertas-row .card-alerta .horario p{
+    color: #A6A2A2;
+    text-align: right;
+    font-size: 11px;
+    margin-top: -8px;
+    margin-right: 5px;
+}
+
+.alertas .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.alertas .link a{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    color: #424242;
+}
+
+.monitoramento{
+    display: flex;
+    flex-direction: column;
+}
+
+.monitoramento .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    font-family: poppinsregular;
+    margin-bottom: -25px;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.monitoramento .title a{
+    color: #8f8f8f;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card-tabela-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-tabela {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 3px 3px 4px 3px rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.card-tabela:hover{
+    top:10px;
+    box-shadow: 7px 7px 13px 7px rgba(50, 50, 50, 0.22);
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabela table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.tabela table thead tr th{
+    border-bottom: 2px solid #000;
+}
+
+.tabela table tbody tr td{
+    border-bottom: 1px solid rgb(114, 114, 114);
+    padding: 10px;
+}
+
+.card-painel-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-painel {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 7px 7px 13px 5px rgba(50, 50, 50, 0.22);
+    padding: 100px;
+    margin: 20px;
+    width: 110px;
+    transition: all 0.2s ease-out;
+}
+
+.card-painel:hover{
+    top:10px;
+    box-shadow: 7px 7px 13px 7px rgba(50, 50, 50, 0.22);
+}
+
+.card-painel .sub-card-painel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    position: relative;
+    border-radius: 14px;
+    padding: 30px;
+    margin: -100px;
+    width:  250px
+}
+
+.card-painel-icon {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 3px 2px 2px 1px rgba(50, 50, 50, 0.22);
+    padding: 15px;
+    margin-left: -200px;
+    margin-bottom: -50px;
+    transition: all 0.2s ease-out;
+}
+
+.card-painel-icon img{
+    width: 30px;
+}
+
+.card-painel .components-painel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+.card-painel .components-painel .text-painel{
+    margin-left: -86px;
+    margin-right: 130px;
+}
+
+.card-painel .components-painel .text-painel h1{
+    font-size: 18px;
+}
+
+.card-painel .components-painel .alertas-painel{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px 2px rgba(50, 50, 50, 0.22);
+    height: 30px;
+    margin-right: -86px;
+    width: 70px;
+    transition: all 0.2s ease-out;
+}
+
+.card-painel .components-painel .alertas-painel a{
+    font-size: 18px;
+    margin: auto;
+}
+
+.card-painel .components-painel .alertas-painel a ion-icon{
+    color: #FF0000;
+}
+
+.card-painel .buttons-painel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    margin-bottom: -80px;
+    
+}
+
+.card-painel .buttons-painel button{
+    margin: 2px;
+}
+
+.card-painel .buttons-painel button{
+    background: #A6A2A2;
+    color:#fff;
+    font-size: 11px;
+    width: 100px;
+    padding: 4px;
+    border: none;
+    text-decoration: none;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.graficos{
+    margin-bottom: 30px;
+}
+
+.graficos h3{
+    position: static;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.graficos-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.graficos-row .card-grafico{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px 3px rgba(50, 50, 50, 0.22);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.graficos-row .card-grafico:hover{
+    top:10px;
+    box-shadow: 8px 8px 10px 8px rgba(50, 50, 50, 0.22);
+}
+
+.graficos-row .card-grafico #grafico_amonia{
+    padding: 10px;
+}
+
+.graficos-row .card-grafico #grafico_temperatura{
+    padding: 10px;
+}
+
+.graficos-row .card-grafico #grafico_umidade{
+    padding: 10px;
+}

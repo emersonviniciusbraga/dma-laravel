@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+}
+
+header #title{
+    flex-direction: column;
+    text-align: justify;
+    line-height: 10px;
+    margin: 20px;    
+}
+
+header #title h1{
+    color: #fff;
+    font-size: 25px;
+}
+
+header #title h4{
+    color: #FFBD59;
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 20px;  
+}
+
+header ul li a{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    transition-property: #fff;
+}
+
+header ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.top {
+    background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    display: flex;
+    flex-direction: row;
+}
+
+.top .texto-top{
+    margin: 50px;
+    color: #fff;
+    font-family: poppinsregular;
+}
+
+.top .texto-top h1{
+    text-align: justify;
+    font-size: 37px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.top .texto-top p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.top .img-top img{
+    margin-top: 60px;
+    margin-bottom: -54px;
+    margin-right: 0px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.produto .top-produto{
+    text-align: center;
+    margin: 30px;
+}
+
+.produto .card-produto-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produto .card-produto-row .ponto-produto{
+    margin: 40px;
+    margin-bottom: 70px;
+}
+
+
+.produto .card-produto-row .ponto-produto .card-ponto-mobile{
+    background: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    border-radius: 1000px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.produto .card-produto-row .ponto-produto .card-ponto-mobile img{
+    width: 50%;
+    margin: 40px;
+}
